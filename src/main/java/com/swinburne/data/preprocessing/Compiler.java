@@ -8,32 +8,41 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
 public class Compiler {
 
+    private String cmdline = null;
+    private String directory = null;
+
+    public Compiler(String cmdline, String directory) {
+        this.cmdline = cmdline;
+        this.directory = directory;
+    }
+
     public void compile() {
 
-        List<File> files = Utils.getFiles(CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
+        List<File> files = Utils.getFiles(this.directory);
 
         System.out.println("--------All Files Loaded--------");
 
+        int success = 0;
         try {
             for(File file : files) {
 
                 Runtime run = Runtime.getRuntime();
 
-                String[] cmd = {"mipsel-linux-musl-gcc", "-c", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY
-                        + file.getName(), "-o", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY + file.getName() + ".o"};
+                String[] cmd = {this.cmdline, "-c", this.directory
+                        + file.getName(), "-o", this.directory + file.getName() + ".o"};
 
                 Process pr = run.exec(cmd);
 
                 int exitValue = pr.waitFor();
 
                 if (exitValue == 0) {
+                    success++;
 //                    System.out.println("----------------- Exec successfull ----------------- ");
                     boolean isFileDeleted = FileUtils.deleteQuietly(file);
                     if (!isFileDeleted)
@@ -62,6 +71,7 @@ public class Compiler {
 
                     int exitValueFixed = prcessFixed.waitFor();
                     if (exitValueFixed == 0) {
+                        success++;
                         System.out.println("===============############### Exec fixed file successfull ###############===============");
                         boolean isFileDeleted = FileUtils.deleteQuietly(file);
                         boolean isFixedFileDeleted = FileUtils.deleteQuietly(fixedFile);
@@ -71,7 +81,7 @@ public class Compiler {
                             Process clearProcess1 = run.exec("clear");
                             clearProcess1.waitFor();
                     }
-//                    System.out.println("Processed file number =  " + i);
+                    System.out.println(success + " files have been compiled successfully");
                 }
             }
         } catch (Exception e) {
@@ -109,7 +119,8 @@ public class Compiler {
     public static void main(String[] args) {
 
         try {
-            Compiler compiler = new Compiler();
+//            Compiler compiler = new Compiler("mipsel-linux-musl-gcc");
+            Compiler compiler = new Compiler("gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
             compiler.compile();
         } catch (Exception e) {
             e.printStackTrace();
