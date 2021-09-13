@@ -1,7 +1,0 @@
-parser.argumentExpressionList
-
-argumentExpressionList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t
- assignmentExpression -> staticintqueue_hash_cb(constvoid*obj
- assignmentExpression -> constintflags
- assignmentExpression -> structast_t
-  primaryExpression -> ast_t
