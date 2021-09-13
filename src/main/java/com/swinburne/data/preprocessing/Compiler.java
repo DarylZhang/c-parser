@@ -119,8 +119,8 @@ public class Compiler {
     public static void main(String[] args) {
 
         try {
-//            Compiler compiler = new Compiler("mipsel-linux-musl-gcc");
-            Compiler compiler = new Compiler("gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
+            Compiler compiler = new Compiler("mipsel-linux-musl-gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
+//            Compiler compiler = new Compiler("gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
             compiler.compile();
         } catch (Exception e) {
             e.printStackTrace();
