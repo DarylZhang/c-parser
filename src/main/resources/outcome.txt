@@ -1,0 +1,1089 @@
+14:41:20: Executing task ':Test.main()'...
+
+> Task :generateGrammarSource NO-SOURCE
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :Test.main()
+=========== parser.assignmentExpression() ===========
+assignmentExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+=========== parser.declarationSpecifiers2() ===========
+declarationSpecifiers2 -> staticintqueue_hash_cb
+ storageClassSpecifier -> static
+ typeSpecifier -> int
+ typedefName -> queue_hash_cb
+=========== ******************** ===========
+
+
+=========== parser.abstractDeclarator() ===========
+abstractDeclarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+=========== parser.additiveExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+
+=========== parser.alignmentSpecifier() ===========
+alignmentSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+=========== parser.andExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+
+=========== parser.argumentExpressionList() ===========
+argumentExpressionList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t
+ assignmentExpression -> staticintqueue_hash_cb(constvoid*obj
+ assignmentExpression -> constintflags
+ assignmentExpression -> structast_t*t
+  multiplicativeExpression -> ast_t*t
+   primaryExpression -> ast_t
+   primaryExpression -> t
+=========== ******************** ===========
+
+
+=========== parser.assignmentOperator() ===========
+assignmentOperator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+=========== parser.atomicTypeSpecifier() ===========
+atomicTypeSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+=========== parser.blockItem() ===========
+declaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+
+=========== parser.blockItemList() ===========
+blockItemList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)<missing ';'>{conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)<missing ';'>
+  declarationSpecifiers -> staticint
+   storageClassSpecifier -> static
+   typeSpecifier -> int
+  directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+   directDeclarator -> queue_hash_cb
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+ compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+   declaration -> conststructcall_queue*q=obj;
+    declarationSpecifiers -> conststructcall_queue*
+     typeQualifier -> const
+     typeSpecifier -> structcall_queue*
+      structOrUnionSpecifier -> structcall_queue
+       structOrUnion -> struct
+      pointer -> *
+    initDeclarator -> q=obj
+     directDeclarator -> q
+     primaryExpression -> obj
+   jumpStatement -> returnast_str_case_hash(q->name);
+    postfixExpression -> ast_str_case_hash(q->name)
+     primaryExpression -> ast_str_case_hash
+     postfixExpression -> q->name
+      primaryExpression -> q
+=========== ******************** ===========
+
+
+=========== parser.castExpression() ===========
+castExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.compilationUnit() ===========
+compilationUnit -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}<EOF>
+ functionDefinition -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  declarationSpecifiers -> staticint
+   storageClassSpecifier -> static
+   typeSpecifier -> int
+  directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+   directDeclarator -> queue_hash_cb
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+  compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+   blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+    declaration -> conststructcall_queue*q=obj;
+     declarationSpecifiers -> conststructcall_queue*
+      typeQualifier -> const
+      typeSpecifier -> structcall_queue*
+       structOrUnionSpecifier -> structcall_queue
+        structOrUnion -> struct
+       pointer -> *
+     initDeclarator -> q=obj
+      directDeclarator -> q
+      primaryExpression -> obj
+    jumpStatement -> returnast_str_case_hash(q->name);
+     postfixExpression -> ast_str_case_hash(q->name)
+      primaryExpression -> ast_str_case_hash
+      postfixExpression -> q->name
+       primaryExpression -> q
+=========== ******************** ===========
+
+=========== parser.compoundStatement() ===========
+compoundStatement -> <missing '{'>staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)<missing ';'>{conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}<missing '}'>
+ blockItemList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)<missing ';'>{conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  declaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)<missing ';'>
+   declarationSpecifiers -> staticint
+    storageClassSpecifier -> static
+    typeSpecifier -> int
+   directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+    directDeclarator -> queue_hash_cb
+    parameterList -> constvoid*obj,constintflags,structast_t*t
+     parameterDeclaration -> constvoid*obj
+      declarationSpecifiers -> constvoid*
+       typeQualifier -> const
+       typeSpecifier -> void*
+        typeSpecifier -> void
+        pointer -> *
+      directDeclarator -> obj
+     parameterDeclaration -> constintflags
+      declarationSpecifiers -> constint
+       typeQualifier -> const
+       typeSpecifier -> int
+      directDeclarator -> flags
+     parameterDeclaration -> structast_t*t
+      typeSpecifier -> structast_t*
+       structOrUnionSpecifier -> structast_t
+        structOrUnion -> struct
+       pointer -> *
+      directDeclarator -> t
+  compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+   blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+    declaration -> conststructcall_queue*q=obj;
+     declarationSpecifiers -> conststructcall_queue*
+      typeQualifier -> const
+      typeSpecifier -> structcall_queue*
+       structOrUnionSpecifier -> structcall_queue
+        structOrUnion -> struct
+       pointer -> *
+     initDeclarator -> q=obj
+      directDeclarator -> q
+      primaryExpression -> obj
+    jumpStatement -> returnast_str_case_hash(q->name);
+     postfixExpression -> ast_str_case_hash(q->name)
+      primaryExpression -> ast_str_case_hash
+      postfixExpression -> q->name
+       primaryExpression -> q
+=========== ******************** ===========
+
+=========== parser.conditionalExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.constantExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.declaration() ===========
+declaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.declarationList() ===========
+declarationList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;
+ declaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){
+  declarationSpecifiers -> staticint
+   storageClassSpecifier -> static
+   typeSpecifier -> int
+  directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+   directDeclarator -> queue_hash_cb
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+ declaration -> conststructcall_queue*q=obj;
+  declarationSpecifiers -> conststructcall_queue*
+   typeQualifier -> const
+   typeSpecifier -> structcall_queue*
+    structOrUnionSpecifier -> structcall_queue
+     structOrUnion -> struct
+    pointer -> *
+  initDeclarator -> q=obj
+   directDeclarator -> q
+   primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.declarationSpecifier() ===========
+storageClassSpecifier -> static
+=========== ******************** ===========
+
+=========== parser.declarationSpecifiers() ===========
+declarationSpecifiers -> staticint
+ storageClassSpecifier -> static
+ typeSpecifier -> int
+=========== ******************** ===========
+
+=========== parser.declarator() ===========
+declarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.declarationSpecifiers2() ===========
+declarationSpecifiers2 -> staticintqueue_hash_cb
+ storageClassSpecifier -> static
+ typeSpecifier -> int
+ typedefName -> queue_hash_cb
+=========== ******************** ===========
+
+=========== parser.designation() ===========
+designation -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=
+ designatorList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q
+=========== ******************** ===========
+
+=========== parser.designator() ===========
+designator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.designatorList() ===========
+designatorList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.directAbstractDeclarator() ===========
+directAbstractDeclarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.directDeclarator() ===========
+directDeclarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.enumerationConstant() ===========
+enumerationConstant -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.enumerator() ===========
+enumerator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj
+ enumerationConstant -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.enumeratorList() ===========
+enumerationConstant -> staticintqueue_hash_cb(constvoid*obj
+=========== ******************** ===========
+
+=========== parser.enumSpecifier() ===========
+enumSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.equalityExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.exclusiveOrExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.expressionStatement() ===========
+expressionStatement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.externalDeclaration() ===========
+functionDefinition -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+ compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+   declaration -> conststructcall_queue*q=obj;
+    declarationSpecifiers -> conststructcall_queue*
+     typeQualifier -> const
+     typeSpecifier -> structcall_queue*
+      structOrUnionSpecifier -> structcall_queue
+       structOrUnion -> struct
+      pointer -> *
+    initDeclarator -> q=obj
+     directDeclarator -> q
+     primaryExpression -> obj
+   jumpStatement -> returnast_str_case_hash(q->name);
+    postfixExpression -> ast_str_case_hash(q->name)
+     primaryExpression -> ast_str_case_hash
+     postfixExpression -> q->name
+      primaryExpression -> q
+=========== ******************** ===========
+
+=========== parser.forCondition() ===========
+forCondition -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ forDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  declarationSpecifiers -> staticint
+   storageClassSpecifier -> static
+   typeSpecifier -> int
+  directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+   directDeclarator -> queue_hash_cb
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.forDeclaration() ===========
+forDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.forExpression() ===========
+forExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t
+ assignmentExpression -> staticintqueue_hash_cb(constvoid*obj
+ assignmentExpression -> constintflags
+ assignmentExpression -> structast_t*t
+  multiplicativeExpression -> ast_t*t
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'(', '[', '*', '^'}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting '_Alignas'
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:42 mismatched input 'const' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:59 extraneous input 'struct' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'=', '*=', '/=', '%=', '+=', '-=', '<<=', '>>=', '&=', '^=', '|='}
+line 1:0 mismatched input 'static' expecting '_Atomic'
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 2:0 missing ';' at '{'
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 missing '{' at 'static'
+line 2:0 missing ';' at '{'
+line 6:0 missing '}' at '<EOF>'
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 1:0 mismatched input 'static' expecting {'(', '*', '^', Identifier}
+line 1:0 mismatched input 'static' expecting {'[', '.'}
+line 1:0 mismatched input 'static' expecting {'[', '.'}
+line 1:0 mismatched input 'static' expecting {'[', '.'}
+line 1:0 mismatched input 'static' expecting {'(', '['}
+line 1:0 mismatched input 'static' expecting {'(', Identifier}
+line 1:0 mismatched input 'static' expecting Identifier
+line 1:0 mismatched input 'static' expecting Identifier
+line 1:0 mismatched input 'static' expecting Identifier
+line 1:0 mismatched input 'static' expecting 'enum'
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', ';', Identifier, Constant, DigitSequence, StringLiteral}
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:42 mismatched input 'const' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:59 extraneous input 'struct' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__inline__', '__stdcall', '__declspec', '__attribute__', 'inline', '_Noreturn'}
+line 1:0 mismatched input 'static' expecting '__attribute__'
+line 1:0 mismatched input 'static' expecting {'__asm', '__attribute__'}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'default', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', Identifier}
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'default', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', Identifier}
+line 2:0 mismatched input '{' expecting {'__asm', '__attribute__', '(', ')', '[', ','}
+line 1:0 mismatched input 'static' expecting '_Generic'
+line 1:0 mismatched input 'static' expecting Identifier
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'(', '*', '^', Identifier}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '{', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '[', '{', '+', '++', '-', '--', '*', '&', '&&', '!', '~', '.', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'do', 'for', 'while'}
+line 1:0 mismatched input 'static' expecting {'break', 'continue', 'goto', 'return'}
+line 1:0 mismatched input 'static' expecting {'case', 'default', Identifier}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'*', '^'}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', '_Generic', '(', Identifier, Constant, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', '_Generic', '(', Identifier, Constant, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'if', 'switch'}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', '__asm', '__asm__', 'break', 'case', 'continue', 'default', 'do', 'for', 'goto', 'if', 'return', 'sizeof', 'switch', 'while', '_Alignof', '_Generic', '(', '{', '+', '++', '-', '--', '*', '&', '&&', '!', '~', ';', Identifier, Constant, DigitSequence, StringLiteral}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', Identifier}
+line 1:0 mismatched input 'static' expecting '_Static_assert'
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', '_Static_assert', Identifier}
+line 1:25 no viable alternative at input '(const'
+line 1:42 mismatched input 'const' expecting {'(', '*', '^', ':', Identifier}
+line 1:59 extraneous input 'struct' expecting {'(', '*', '^', ':', Identifier}
+line 1:72 mismatched input '*' expecting {'__asm', '__attribute__', '(', '[', ';', ','}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', '_Static_assert', Identifier}
+line 1:25 no viable alternative at input '(const'
+line 1:40 mismatched input ',' expecting {'(', '*', '^', ':', ';', Identifier}
+line 1:57 mismatched input ',' expecting {'(', '*', '^', ':', ';', Identifier}
+line 1:74 mismatched input ')' expecting {'(', '*', '^', ':', ';', Identifier}
+line 3:28 extraneous input '=' expecting {'(', '*', '^', ':', ';', Identifier}
+line 1:0 mismatched input 'static' expecting {'(', '*', '^', ':', Identifier}
+line 1:0 mismatched input 'static' expecting {'(', '*', '^', ':', Identifier}
+line 1:42 mismatched input 'const' expecting {'(', '*', '^', ':', Identifier}
+line 1:59 extraneous input 'struct' expecting {'(', '*', '^', ':', Identifier}
+line 1:0 mismatched input 'static' expecting {'struct', 'union'}
+line 1:0 mismatched input 'static' expecting {'struct', 'union'}
+line 1:0 mismatched input 'static' expecting Identifier
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'const', 'double', 'enum', 'float', 'int', 'long', 'restrict', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', 'volatile', '_Atomic', '_Bool', '_Complex', Identifier}
+line 1:0 mismatched input 'static' expecting {'const', 'restrict', 'volatile', '_Atomic'}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'double', 'enum', 'float', 'int', 'long', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', '_Atomic', '_Bool', '_Complex', Identifier}
+line 1:0 extraneous input 'static' expecting {'__extension__', '__m128', '__m128d', '__m128i', '__typeof__', 'char', 'double', 'enum', 'float', 'int', 'long', 'short', 'signed', 'struct', 'union', 'unsigned', 'void', '_Atomic', '_Bool', '_Complex', Identifier}
+line 1:0 mismatched input 'static' expecting {'__extension__', '__builtin_va_arg', '__builtin_offsetof', 'sizeof', '_Alignof', '_Generic', '(', '+', '++', '-', '--', '*', '&', '&&', '!', '~', Identifier, Constant, StringLiteral}
+line 1:0 mismatched input 'static' expecting {'+', '-', '*', '&', '!', '~'}
+   primaryExpression -> ast_t
+   primaryExpression -> t
+=========== ******************** ===========
+
+=========== parser.functionDefinition() ===========
+functionDefinition -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+ compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+   declaration -> conststructcall_queue*q=obj;
+    declarationSpecifiers -> conststructcall_queue*
+     typeQualifier -> const
+     typeSpecifier -> structcall_queue*
+      structOrUnionSpecifier -> structcall_queue
+       structOrUnion -> struct
+      pointer -> *
+    initDeclarator -> q=obj
+     directDeclarator -> q
+     primaryExpression -> obj
+   jumpStatement -> returnast_str_case_hash(q->name);
+    postfixExpression -> ast_str_case_hash(q->name)
+     primaryExpression -> ast_str_case_hash
+     postfixExpression -> q->name
+      primaryExpression -> q
+=========== ******************** ===========
+
+=========== parser.functionSpecifier() ===========
+functionSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.gccAttribute() ===========
+gccAttribute -> static
+=========== ******************** ===========
+
+=========== parser.gccAttributeList() ===========
+gccAttribute -> static
+=========== ******************** ===========
+
+
+=========== parser.gccAttributeSpecifier() ===========
+gccAttributeSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.gccDeclaratorExtension() ===========
+gccDeclaratorExtension -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.genericAssociation() ===========
+genericAssociation -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ typeName -> intqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  specifierQualifierList -> intqueue_hash_cb
+   typeSpecifier -> int
+   typedefName -> queue_hash_cb
+  directAbstractDeclarator -> (constvoid*obj,constintflags,structast_t*t)
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.genericAssocList() ===========
+genericAssociation -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ typeName -> intqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  specifierQualifierList -> intqueue_hash_cb
+   typeSpecifier -> int
+   typedefName -> queue_hash_cb
+  directAbstractDeclarator -> (constvoid*obj,constintflags,structast_t*t)
+   parameterList -> constvoid*obj,constintflags,structast_t*t
+    parameterDeclaration -> constvoid*obj
+     declarationSpecifiers -> constvoid*
+      typeQualifier -> const
+      typeSpecifier -> void*
+       typeSpecifier -> void
+       pointer -> *
+     directDeclarator -> obj
+    parameterDeclaration -> constintflags
+     declarationSpecifiers -> constint
+      typeQualifier -> const
+      typeSpecifier -> int
+     directDeclarator -> flags
+    parameterDeclaration -> structast_t*t
+     typeSpecifier -> structast_t*
+      structOrUnionSpecifier -> structast_t
+       structOrUnion -> struct
+      pointer -> *
+     directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.genericSelection() ===========
+genericSelection -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.identifierList() ===========
+identifierList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.inclusiveOrExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.initDeclarator() ===========
+initDeclarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj
+ declarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.initializer() ===========
+initializer -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.initializerList() ===========
+initializerList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.iterationStatement() ===========
+iterationStatement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.jumpStatement() ===========
+jumpStatement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.labeledStatement() ===========
+labeledStatement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.logicalAndExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.logicalOrExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.multiplicativeExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.nestedParenthesesBlock() ===========
+nestedParenthesesBlock -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ nestedParenthesesBlock -> constvoid*obj,constintflags,structast_t*t
+ nestedParenthesesBlock -> q->name
+=========== ******************** ===========
+
+=========== parser.parameterDeclaration() ===========
+parameterDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.parameterList() ===========
+parameterDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.pointer() ===========
+pointer -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.postfixExpression() ===========
+postfixExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.parameterTypeList() ===========
+parameterDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.primaryExpression() ===========
+primaryExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.relationalExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.selectionStatement() ===========
+selectionStatement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.shiftExpression() ===========
+multiplicativeExpression -> staticintqueue_hash_cb(constvoid*obj
+ castExpression -> staticintqueue_hash_cb(constvoid
+ primaryExpression -> obj
+=========== ******************** ===========
+
+=========== parser.statement() ===========
+statement -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.specifierQualifierList() ===========
+specifierQualifierList -> staticintqueue_hash_cb
+ typeSpecifier -> int
+ typedefName -> queue_hash_cb
+=========== ******************** ===========
+
+=========== parser.staticAssertDeclaration() ===========
+staticAssertDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.storageClassSpecifier() ===========
+storageClassSpecifier -> static
+=========== ******************** ===========
+
+=========== parser.structDeclaration() ===========
+structDeclaration -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ specifierQualifierList -> intqueue_hash_cb
+  typeSpecifier -> int
+  typedefName -> queue_hash_cb
+ structDeclaratorList -> (constvoid*obj,constintflags,structast_t
+  structDeclarator -> (constvoid*obj
+  structDeclarator -> constintflags
+  structDeclarator -> structast_t
+   directDeclarator -> ast_t
+=========== ******************** ===========
+
+=========== parser.structDeclarationList() ===========
+structDeclarationList -> staticintqueue_hash_cb(<missing ';'>constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;
+ structDeclaration -> intqueue_hash_cb(<missing ';'>
+  specifierQualifierList -> intqueue_hash_cb
+   typeSpecifier -> int
+   typedefName -> queue_hash_cb
+  structDeclarator -> (
+ structDeclaration -> constvoid*obj,
+  specifierQualifierList -> constvoid*obj
+   typeQualifier -> const
+   specifierQualifierList -> void*obj
+    typeSpecifier -> void*
+     typeSpecifier -> void
+     pointer -> *
+    typedefName -> obj
+ structDeclaration -> constintflags,
+  specifierQualifierList -> constintflags
+   typeQualifier -> const
+   specifierQualifierList -> intflags
+    typeSpecifier -> int
+    typedefName -> flags
+ structDeclaration -> structast_t*t){
+  specifierQualifierList -> structast_t*t
+   typeSpecifier -> structast_t*
+    structOrUnionSpecifier -> structast_t
+     structOrUnion -> struct
+    pointer -> *
+   typedefName -> t
+ structDeclaration -> conststructcall_queue*q=obj;
+  specifierQualifierList -> conststructcall_queue*q
+   typeQualifier -> const
+   specifierQualifierList -> structcall_queue*q
+    typeSpecifier -> structcall_queue*
+     structOrUnionSpecifier -> structcall_queue
+      structOrUnion -> struct
+     pointer -> *
+    typedefName -> q
+  directDeclarator -> obj
+=========== ******************** ===========
+
+=========== parser.structDeclarator() ===========
+structDeclarator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.structDeclaratorList() ===========
+structDeclaratorList -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t
+ structDeclarator -> staticintqueue_hash_cb(constvoid*obj
+ structDeclarator -> constintflags
+ structDeclarator -> structast_t
+  directDeclarator -> ast_t
+=========== ******************** ===========
+
+=========== parser.structOrUnion() ===========
+structOrUnion -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.structOrUnionSpecifier() ===========
+structOrUnionSpecifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.translationUnit() ===========
+functionDefinition -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+ declarationSpecifiers -> staticint
+  storageClassSpecifier -> static
+  typeSpecifier -> int
+ directDeclarator -> queue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+  directDeclarator -> queue_hash_cb
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+ compoundStatement -> {conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+  blockItemList -> conststructcall_queue*q=obj;returnast_str_case_hash(q->name);
+   declaration -> conststructcall_queue*q=obj;
+    declarationSpecifiers -> conststructcall_queue*
+     typeQualifier -> const
+     typeSpecifier -> structcall_queue*
+      structOrUnionSpecifier -> structcall_queue
+       structOrUnion -> struct
+      pointer -> *
+    initDeclarator -> q=obj
+     directDeclarator -> q
+     primaryExpression -> obj
+   jumpStatement -> returnast_str_case_hash(q->name);
+    postfixExpression -> ast_str_case_hash(q->name)
+     primaryExpression -> ast_str_case_hash
+     postfixExpression -> q->name
+      primaryExpression -> q
+=========== ******************** ===========
+
+=========== parser.typedefName() ===========
+typedefName -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.typeName() ===========
+typeName -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t)
+ specifierQualifierList -> staticintqueue_hash_cb
+  typeSpecifier -> int
+  typedefName -> queue_hash_cb
+ directAbstractDeclarator -> (constvoid*obj,constintflags,structast_t*t)
+  parameterList -> constvoid*obj,constintflags,structast_t*t
+   parameterDeclaration -> constvoid*obj
+    declarationSpecifiers -> constvoid*
+     typeQualifier -> const
+     typeSpecifier -> void*
+      typeSpecifier -> void
+      pointer -> *
+    directDeclarator -> obj
+   parameterDeclaration -> constintflags
+    declarationSpecifiers -> constint
+     typeQualifier -> const
+     typeSpecifier -> int
+    directDeclarator -> flags
+   parameterDeclaration -> structast_t*t
+    typeSpecifier -> structast_t*
+     structOrUnionSpecifier -> structast_t
+      structOrUnion -> struct
+     pointer -> *
+    directDeclarator -> t
+=========== ******************** ===========
+
+=========== parser.typeQualifier() ===========
+typeQualifier -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.typeSpecifier() ===========
+typeSpecifier -> staticint
+=========== ******************** ===========
+
+=========== parser.typeSpecifier() ===========
+typeSpecifier -> staticint
+=========== ******************** ===========
+
+=========== parser.unaryExpression() ===========
+unaryExpression -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+=========== parser.unaryOperator() ===========
+unaryOperator -> staticintqueue_hash_cb(constvoid*obj,constintflags,structast_t*t){conststructcall_queue*q=obj;returnast_str_case_hash(q->name);}
+=========== ******************** ===========
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 604ms
+3 actionable tasks: 1 executed, 2 up-to-date
+14:41:20: Task execution finished ':Test.main()'.

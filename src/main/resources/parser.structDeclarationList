@@ -1,0 +1,32 @@
+parser.structDeclarationList()
+
+structDeclarationList -> staticintqueue_hash_cb(<missing ';'>constvoid*obj,constintflags){conststructcall_queue*q=obj;
+ structDeclaration -> intqueue_hash_cb(<missing ';'>
+  specifierQualifierList -> intqueue_hash_cb
+   typeSpecifier -> int
+   typedefName -> queue_hash_cb
+  structDeclarator -> (
+ structDeclaration -> constvoid*obj,
+  specifierQualifierList -> constvoid*obj
+   typeQualifier -> const
+   specifierQualifierList -> void*obj
+    typeSpecifier -> void*
+     typeSpecifier -> void
+     pointer -> *
+    typedefName -> obj
+ structDeclaration -> constintflags){
+  specifierQualifierList -> constintflags
+   typeQualifier -> const
+   specifierQualifierList -> intflags
+    typeSpecifier -> int
+    typedefName -> flags
+ structDeclaration -> conststructcall_queue*q=obj;
+  specifierQualifierList -> conststructcall_queue*q
+   typeQualifier -> const
+   specifierQualifierList -> structcall_queue*q
+    typeSpecifier -> structcall_queue*
+     structOrUnionSpecifier -> structcall_queue
+      structOrUnion -> struct
+     pointer -> *
+    typedefName -> q
+  directDeclarator -> obj
