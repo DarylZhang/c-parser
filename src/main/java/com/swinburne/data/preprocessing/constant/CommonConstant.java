@@ -2,6 +2,10 @@ package com.swinburne.data.preprocessing.constant;
 
 public class CommonConstant {
 
+    public final static String NEW_LINE = "\n\r";
+    public final static String BLANK = " ";
+    public final static String SEMICOLON = ";";
+
     public static final String HEADER_DIRECTORY = "/Users/zhangxiaowei/Downloads/data/9_projects/Asterisk/headers/";
     public static final String VULNERABLE_FUNCTIONS_DIRECTORY = "/Users/zhangxiaowei/Downloads/data/9_projects/Asterisk/Vulnerable_functions/";
     public static final String VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY = "/Users/zhangxiaowei/Downloads/data/9_projects/Asterisk/Vulnerable_functions_lessthan_20_lines/";

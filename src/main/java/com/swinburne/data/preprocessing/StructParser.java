@@ -48,6 +48,14 @@ public class StructParser {
     public void parseStructChild(RuleContext ctx, boolean verbose, int indentation) throws Exception {
         boolean toBeIgnored = !verbose && ctx.getChildCount() == 1 && ctx.getChild(0) instanceof ParserRuleContext;
 
+//        if(toBeIgnored) {
+//            for (int i = 0; i < indentation; i++) {
+//                System.out.print(" ");
+//            }
+//            indentation++;
+//            System.out.println(CParser.ruleNames[ctx.getRuleIndex()] + " -> " + ctx.getText());
+//        }
+
         if (!toBeIgnored) {
             String ruleName = CParser.ruleNames[ctx.getRuleIndex()];
             String parentRuleName = CParser.ruleNames[ctx.getParent().getRuleIndex()];
@@ -56,7 +64,7 @@ public class StructParser {
                 System.out.print(" ");
             }
 
-//            System.out.println(ruleName + " -> " + ctx.getText());
+            System.out.println(ruleName + " ->>>> " + ctx.getText());
 
             if (this.doParse) {
 

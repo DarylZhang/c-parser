@@ -1,16 +1,18 @@
 package com.swinburne.data.preprocessing;
 
 import com.swinburne.data.preprocessing.constant.CommonConstant;
+import com.swinburne.data.preprocessing.ctype.Record;
 import com.swinburne.data.preprocessing.ctype.Struct;
-import com.swinburne.data.preprocessing.gen.CBaseVisitor;
 import com.swinburne.data.preprocessing.gen.CLexer;
 import com.swinburne.data.preprocessing.gen.CParser;
+import com.swinburne.data.preprocessing.parse.*;
+import com.swinburne.data.preprocessing.treenode.TreeNode;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Test {
@@ -18,7 +20,7 @@ public class Test {
     public static void main(String[] args) {
 
         File testFile = new File(CommonConstant.TEST_FILE_DIRECTORY
-                + "abstract_jb.c_get_now.c");
+                + "callerid.c_ast_connected_line_source_describe.c");
 
         try {
 //            InputStream is = new FileInputStream(testFile);
@@ -36,11 +38,34 @@ public class Test {
             ParserRuleContext ctxForStruct = parserForStruct.translationUnit();
 //            ParserRuleContext ctxForStruct = parserForStruct.structDeclarationList();
             System.out.println("=========== parser        struct ===========");
-            StructParser structParser = new StructParser(true);
-            Map<String, Struct> structMap = structParser.parseStruct(ctxForStruct, false, 0);
+
+            Parser parser = new Parser(true);
+            TreeNode treeNode = parser.buildTree(ctxForStruct, false, 0);
+            Map<String, Record> variableMap = new HashMap<>();
+
+            ParseFunctionParam parseFunctionParam = new ParseFunctionParam();
+            parseFunctionParam.parseFunctionParams(treeNode, variableMap);
+
+            ParseDeclaration parseDeclaration = new ParseDeclaration();
+            parseDeclaration.parseDeclaration(treeNode, variableMap);
+
+            ParseStructVariable parseStructVariable = new ParseStructVariable();
+            StringBuffer structSb = parseStructVariable.parseStructVariable(treeNode, variableMap);
+
+            ParsePrimaryParam primaryParam = new ParsePrimaryParam(variableMap);
+            StringBuffer undefinedNonStructVarSb = primaryParam.findUndefinedNonStructVar(treeNode);
+
+            ParseFunction parseFunction = new ParseFunction();
+            StringBuffer undefinedFunctionSb = parseFunction.parseFunction(treeNode);
+
+                    //            ArrayList<TreeNode> parameterDeclarations = treeNode.bfsSearchByCtxName(treeNode, "parameterDeclaration", new ArrayList<>());
+
+//            StructParser structParser = new StructParser(false);
+//            Map<String, Struct> structMap = structParser.parseStruct(ctxForStruct, false, 0);
+
             System.out.println("###############################");
-            StringBuffer sb = structParser.buildStructStatement(structMap);
-            System.out.println(sb);
+//            StringBuffer sb = structParser.buildStructStatement(structMap);
+//            System.out.println(sb);
             System.out.println("=========== ******************** ===========");
 
 

@@ -50,23 +50,18 @@ public class Compiler {
                 } else {
                     run.exec("clear");
 
-                    StringBuffer sb = this.parseCFile(file);
-                    if (sb.length() > 10)
-                        System.out.println("");
+                    Parser parser = new Parser(false);
+                    StringBuffer sb = parser.doParse(file);
 
-                    File fixedFile = new File(CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY + file.getName() + ".fixed.c");
+                    File fixedFile = new File(this.directory + file.getName() + ".fixed.c");
                     FileUtils.copyFile(file, fixedFile);
                     String fixedFileString = FileUtils.readFileToString(fixedFile, "UTF-8");
 
-                    //添加头文件
-                    File headerFile = new File(CommonConstant.HEADER_DIRECTORY + "header.h");
-                    String headerFileString = FileUtils.readFileToString(headerFile, "UTF-8");
-
-                    String finalString = headerFileString + sb.toString() + fixedFileString;
+                    String finalString = sb.toString() + fixedFileString;
                     FileUtils.writeStringToFile(fixedFile, finalString, "UTF-8");
 
-                    String[] cmdFixed = {"mipsel-linux-musl-gcc", "-c", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY
-                            + fixedFile.getName(), "-o", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY + fixedFile.getName() + ".o"};
+                    String[] cmdFixed = {this.cmdline, "-c", this.directory
+                            + fixedFile.getName(), "-o", this.directory + fixedFile.getName() + ".o"};
                     Process prcessFixed = run.exec(cmdFixed);
 
                     int exitValueFixed = prcessFixed.waitFor();
@@ -81,12 +76,14 @@ public class Compiler {
                             Process clearProcess1 = run.exec("clear");
                             clearProcess1.waitFor();
                     }
-                    System.out.println(success + " files have been compiled successfully");
+//                    System.out.println(success + " files have been compiled successfully");
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        System.out.println(success + " files have been compiled successfully");
     }
 
     private StringBuffer parseCFile(File file) {
@@ -119,8 +116,8 @@ public class Compiler {
     public static void main(String[] args) {
 
         try {
-            Compiler compiler = new Compiler("mipsel-linux-musl-gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
-//            Compiler compiler = new Compiler("gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
+//            Compiler compiler = new Compiler("mipsel-linux-musl-gcc", CommonConstant.NON_VULNERABLE_FUNCTIONS_LESSTHAN_20LINES_DIRECTORY);
+            Compiler compiler = new Compiler("gcc", "/Users/zhangxiaowei/Downloads/data/9_projects/OpenSSL/Non_vulnerable_functions_lessthan_20_lines/");
             compiler.compile();
         } catch (Exception e) {
             e.printStackTrace();

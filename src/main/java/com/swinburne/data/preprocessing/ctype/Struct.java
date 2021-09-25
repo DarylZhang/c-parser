@@ -9,6 +9,7 @@ import java.util.Vector;
 @EqualsAndHashCode(callSuper=false)
 public final class Struct extends Record
 {
+	private Vector<String> refs;
 	private String ref;
 	private Vector<Record> structChildren;
 
