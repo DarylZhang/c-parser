@@ -171,15 +171,14 @@ public class ParseStructVariable {
                 structVariable.setIsArray(isArray);
 
                 if (parentStruct != null) {
-                    Vector<Record> structChildren = new Vector<>();
-                    structChildren.add(structVariable);
-
-                    if (parentStruct.getStructChildren() == null) {
+                    if (parentStruct.getStructChildren() == null || parentStruct.getStructChildren().isEmpty()) {
+                        Vector<Record> structChildren = new Vector<>();
+                        structChildren.add(structVariable);
                         parentStruct.setStructChildren(structChildren);
                     } else {
                         boolean found = parentStruct.getStructChildren().stream().anyMatch(v -> v.getName().equals(finalVariable));
                         if (!found)
-                            parentStruct.setStructChildren(structChildren);
+                            parentStruct.getStructChildren().add(structVariable);
                     }
                 } else {
                     boolean found = targetStructChildren.stream().anyMatch(v -> v.getName().equals(finalVariable));
@@ -222,6 +221,7 @@ public class ParseStructVariable {
                     boolean found = targetStructChildren.stream().anyMatch(v -> v.getName().equals(finalVariable));
                     if (!found) {
                         targetStructChildren.add(childStruct);
+                        parentStruct = childStruct;
                     } else {
                         Record existingVariable = targetStructChildren.stream().filter(v -> v.getName().equals(finalVariable)).findFirst().get();
 
@@ -233,11 +233,14 @@ public class ParseStructVariable {
                                 }
                             }
                             targetStructChildren.add(childStruct);
+                            parentStruct = childStruct;
+                        } else {
+                            parentStruct = (Struct) existingVariable;
                         }
                     }
                 }
 
-                parentStruct = childStruct;
+//                parentStruct = childStruct;
 
             }
 
@@ -281,6 +284,9 @@ public class ParseStructVariable {
                 sb.append(CommonConstant.BLANK);
                 sb.append(struct.getName());
             }
+        } else {
+            sb.append(CommonConstant.BLANK);
+            sb.append(struct.getName());
         }
         sb.append(" {").append(CommonConstant.NEW_LINE);
 

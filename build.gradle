@@ -19,6 +19,7 @@ dependencies {
     implementation 'commons-io:commons-io:2.6'
     testCompileOnly 'org.projectlombok:lombok:1.18.20'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation 'com.google.guava:guava:11.0.2'
 }
 
 test {
